@@ -1,0 +1,43 @@
+<nav class="navbar navbar-expand-lg navbar-dark resume-navbar" aria-label="Main navigation">
+    <div class="container-fluid">
+        <a class="navbar-brand d-lg-none" href="/">Clarence Taylor</a>
+
+        <button class="navbar-toggler" type="button"
+                data-bs-toggle="collapse" data-bs-target="#resumeNavigation"
+                aria-controls="resumeNavigation" aria-expanded="false"
+                aria-label="Mở menu điều hướng">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="resumeNavigation">
+            <div class="sidebar-inner">
+                <a class="profile-link" href="/" aria-label="About Clarence Taylor">
+                    <img class="profile-image"
+                         src="https://i.pravatar.cc/300?img=12"
+                         alt="Ảnh đại diện Clarence Taylor" />
+                </a>
+
+                <ul class="navbar-nav flex-column text-uppercase">
+                    <li class="nav-item">
+                        <NavLink class="nav-link" href="/" Match="NavLinkMatch.All">About</NavLink>
+                    </li>
+                    <li class="nav-item">
+                        <NavLink class="nav-link" href="/experience">Experience</NavLink>
+                    </li>
+                    <li class="nav-item">
+                        <NavLink class="nav-link" href="/education">Education</NavLink>
+                    </li>
+                    <li class="nav-item">
+                        <NavLink class="nav-link" href="/skills">Skills</NavLink>
+                    </li>
+                    <li class="nav-item">
+                        <NavLink class="nav-link" href="/interests">Interests</NavLink>
+                    </li>
+                    <li class="nav-item">
+                        <NavLink class="nav-link" href="/awards">Awards</NavLink>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</nav>

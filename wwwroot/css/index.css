@@ -1,0 +1,324 @@
+/* Theme for Start Bootstrap Resume */
+:root {
+    --resume-primary: #bd5d38;
+    --resume-heading: #343a40;
+    --resume-body: #6c757d;
+    --resume-sidebar-width: 17rem;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    padding-top: 0;
+    padding-left: var(--resume-sidebar-width);
+    color: var(--resume-body);
+    font-family: "Muli", "Segoe UI", Arial, sans-serif;
+    font-size: 1rem;
+    line-height: 1.5;
+}
+
+a {
+    color: var(--resume-primary);
+    text-decoration: none;
+}
+
+a:hover {
+    color: #824027;
+    text-decoration: underline;
+}
+
+h1, h2, h3, h4, h5, h6,
+.subheading {
+    color: var(--resume-heading);
+    font-family: "Saira Extra Condensed", "Arial Narrow", sans-serif;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+h1 {
+    font-size: 6rem;
+    line-height: 1;
+}
+
+h2 {
+    font-size: 3.5rem;
+}
+
+h3 {
+    font-size: 2rem;
+}
+
+.text-primary {
+    color: var(--resume-primary) !important;
+}
+
+.resume-wrapper {
+    min-height: 100vh;
+}
+
+.resume-navbar {
+    position: fixed;
+    inset: 0 auto 0 0;
+    z-index: 1030;
+    display: flex;
+    width: var(--resume-sidebar-width);
+    height: 100vh;
+    padding: 0;
+    background-color: var(--resume-primary);
+    text-align: center;
+}
+
+.resume-navbar > .container-fluid {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+}
+
+.resume-navbar .navbar-collapse {
+    display: flex !important;
+    flex-basis: auto;
+    width: 100%;
+    justify-content: center;
+}
+
+.sidebar-inner {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+.profile-link {
+    display: flex;
+    margin: 0 auto 1rem;
+    padding: .5rem;
+}
+
+.profile-image {
+    width: 10rem;
+    height: 10rem;
+    border: .5rem solid rgba(255,255,255,.2);
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.resume-navbar .navbar-nav {
+    width: 100%;
+    align-items: center;
+}
+
+.resume-navbar .nav-link {
+    padding: .45rem 1rem;
+    color: rgba(255,255,255,.58);
+    font-size: .85rem;
+    font-weight: 800;
+    letter-spacing: .05rem;
+}
+
+.resume-navbar .nav-link:hover,
+.resume-navbar .nav-link.active {
+    color: #fff;
+    text-decoration: none;
+}
+
+.resume-main {
+    width: 100%;
+}
+
+.resume-section {
+    display: flex;
+    min-height: 100vh;
+    max-width: 75rem;
+    align-items: center;
+    padding: 5rem 3rem;
+    border-bottom: 1px solid #dee2e6;
+}
+
+.resume-section:last-child {
+    border-bottom: 0;
+}
+
+.resume-section-content {
+    width: 100%;
+}
+
+.subheading {
+    margin-top: .5rem;
+    margin-bottom: 3rem;
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+
+.lead {
+    font-size: 1.15rem;
+    font-weight: 400;
+}
+
+.social-icons {
+    display: flex;
+    gap: 1rem;
+}
+
+.social-icon {
+    display: inline-flex;
+    width: 3.5rem;
+    height: 3.5rem;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    background-color: #495057;
+    color: #fff;
+    font-size: 1.25rem;
+}
+
+.social-icon:hover {
+    background-color: var(--resume-primary);
+    color: #fff;
+    text-decoration: none;
+}
+
+.resume-item-content {
+    max-width: 55rem;
+}
+
+.resume-date {
+    min-width: 18rem;
+    text-align: right;
+}
+
+.dev-icons {
+    margin-bottom: 2rem;
+    color: #6c757d;
+    font-size: 3rem;
+}
+
+.dev-icons .list-inline-item {
+    margin-right: .5rem;
+}
+
+.workflow-list,
+.award-list {
+    list-style: none;
+    padding-left: 0;
+}
+
+.workflow-list li,
+.award-list li {
+    position: relative;
+    margin-bottom: .35rem;
+    padding-left: 2rem;
+}
+
+.workflow-list .fa-li,
+.award-list .fa-li {
+    left: 0;
+    width: 1.5rem;
+    text-align: left;
+}
+
+@media (max-width: 991.98px) {
+    body {
+        padding-top: 3.5rem;
+        padding-left: 0;
+    }
+
+    .resume-navbar {
+        position: fixed;
+        inset: 0 0 auto 0;
+        display: block;
+        width: 100%;
+        height: auto;
+        min-height: 3.5rem;
+        padding: .5rem 1rem;
+        text-align: left;
+    }
+
+    .resume-navbar > .container-fluid {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        padding: 0;
+    }
+
+    .resume-navbar .navbar-brand {
+        color: #fff;
+        font-family: "Saira Extra Condensed", sans-serif;
+        font-size: 1.6rem;
+        font-weight: 700;
+        text-transform: uppercase;
+    }
+
+    .resume-navbar .navbar-toggler {
+        border-color: rgba(255,255,255,.35);
+    }
+
+    .resume-navbar .navbar-collapse {
+        display: none !important;
+        flex-basis: 100%;
+        width: 100%;
+    }
+
+    .resume-navbar .navbar-collapse.show {
+        display: block !important;
+    }
+
+    .sidebar-inner {
+        align-items: flex-start;
+        padding-top: .75rem;
+    }
+
+    .profile-link {
+        display: none;
+    }
+
+    .resume-navbar .navbar-nav {
+        align-items: flex-start;
+    }
+
+    .resume-navbar .nav-link {
+        padding: .4rem 0;
+    }
+
+    .resume-section {
+        min-height: auto;
+        padding: 5rem 2rem;
+    }
+
+    h1 {
+        font-size: 4.5rem;
+    }
+
+    .resume-date {
+        min-width: 0;
+        margin-top: .5rem;
+        text-align: left;
+    }
+}
+
+@media (max-width: 575.98px) {
+    h1 {
+        font-size: 3.5rem;
+    }
+
+    h2 {
+        font-size: 2.75rem;
+    }
+
+    .subheading {
+        font-size: 1.25rem;
+        margin-bottom: 2rem;
+    }
+
+    .resume-section {
+        padding: 4rem 1.25rem;
+    }
+
+    .dev-icons {
+        font-size: 2.4rem;
+    }
+}
